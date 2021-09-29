@@ -23,7 +23,7 @@ describe("thermostat", function () {
     }
     expect(thermostat.getCurrentTemperature()).toEqual(10);
   });
-
+  
   it("has PSM on by default", () => {
     expect(thermostat.isPowerSavingModeOn()).toBe(true);
   });
