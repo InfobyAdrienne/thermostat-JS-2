@@ -54,7 +54,7 @@ class Thermostat {
   }
 
   resetTemperature() {
-    this.temperature === this.DEFAULT_TEMPERATURE;
+    this.temperature = this.DEFAULT_TEMPERATURE;
   }
 
   energyUsage() {

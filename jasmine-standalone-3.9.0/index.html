@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <style>
+      .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #4b4747;
+      }
+
+      .button1 {background-color: #fc3402;} /* Red */
+      .button2 {background-color: #2be007;} /* Green */
+    
+      .low-usage {
+      color: green;
+      }
+
+      .medium-usage {
+      color: black;
+      }
+
+      .high-usage {
+      color: red;
+      }
+    </style>
+
+    <script src="src/Thermostat.js"></script>
+    <script src="interface.js"></script>
+  </head>
+<body>
+  <h1>Thermostat</h1>
+
+<p> The current temperature is: <b id=temperature> XX </b>
+
+<br>
+Power Saving mode is: <b id=power-saving-status></b>
+<br>
+<br>
+  <button class='button button1' id='temperature-up'>
+  Increase
+</button>
+
+<button class='button button2' id='temperature-down'>
+  Decrease
+</button>
+
+<button class='button' id='PSM-on'>
+  Power Save mode on
+</button>
+
+<button class='button' id='PSM-off'>
+  Power Save mode off
+</button>
+
+<button class='button' id='temperature-reset'>
+  Reset
+</button>
+
+</body>
+</html>
